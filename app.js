@@ -3,7 +3,12 @@ const app = express();
 const axios = require("axios");
 const cors = require("cors");
 
-app.use(cors());
+const corsOptions = {
+  origin: "http://www.theantimba.com",
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 const OPENAI_API_KEY = "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";
 const API_URL = "https://api.openai.com/v1/chat/completions";
