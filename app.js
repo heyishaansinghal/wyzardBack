@@ -5,7 +5,7 @@ const cors = require("cors");
 
 app.use(cors());
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 const API_URL = "https://api.openai.com/v1/chat/completions";
 // Configure OpenAI API credentials
 
